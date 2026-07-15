@@ -1,0 +1,353 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{.footer{
+    width:100%;
+    padding:15px 0;
+    margin-top:40px;
+    text-align:center;
+    color:#fff;
+
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border-top:1px solid rgba(255,255,255,0.2);
+}
+
+.footer p{
+    font-size:1.1rem;
+    font-weight:600;
+    margin:0;
+}
+
+.footer small{
+    font-size:0.9rem;
+    color:rgba(255,255,255,0.8);
+}
+
+.footer i{
+    color:#ffd54f;
+    margin-right:5px;
+}
+    min-height:100vh;
+    background:url("/images/clouds.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    position:relative;
+}
+
+/* Dark Overlay */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.45)
+    );
+    z-index:-1;
+}
+
+/* Header */
+
+header{
+    padding:30px 0;
+    text-align:center;
+}
+
+header h1{
+    color:white;
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+header p{
+    color:#f1f1f1;
+}
+
+/* Glass Card */
+
+.glass-card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:25px;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 45px rgba(0,0,0,.35);
+
+}
+
+/* Search Box */
+
+.input-group{
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+}
+
+.form-control{
+
+    background:rgba(255,255,255,.25)!important;
+
+    color:white!important;
+
+    font-size:18px;
+
+    padding:16px;
+
+}
+
+.form-control::placeholder{
+
+    color:#e8e8e8;
+
+}
+
+.form-control:focus{
+
+    background:rgba(255,255,255,.3)!important;
+
+    color:white;
+
+}
+
+/* Search Button */
+
+.btn-search{
+
+    background:linear-gradient(135deg,#00d2ff,#3a7bd5);
+
+    color:white;
+
+    font-weight:600;
+
+    border:none;
+
+    transition:.3s;
+
+}
+
+.btn-search:hover{
+
+    background:linear-gradient(135deg,#3a7bd5,#00d2ff);
+
+    transform:scale(1.05);
+
+    color:white;
+
+}
+
+/* Weather Card */
+
+.weather-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* City */
+
+.weather-card h2{
+
+    font-size:2.2rem;
+
+}
+
+.weather-card img{
+
+    filter:drop-shadow(0 8px 15px rgba(255,255,255,.3));
+
+}
+
+/* Temperature */
+
+.display-1{
+
+    font-size:5rem;
+
+    text-shadow:0 5px 20px rgba(255,255,255,.2);
+
+}
+
+/* Weather Description */
+
+.text-info{
+
+    color:#90e0ef!important;
+
+    letter-spacing:1px;
+
+}
+
+/* Info Boxes */
+
+.info-box{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    color:white;
+
+}
+
+.info-box:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,.2);
+
+}
+
+.info-box small{
+
+    color:#d9f3ff;
+
+    font-size:15px;
+
+}
+
+.info-box h5{
+
+    margin-top:8px;
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+/* Alert */
+
+.alert{
+
+    border:none;
+
+    border-radius:20px;
+
+    background:rgba(255,80,80,.15);
+
+    color:white;
+
+    backdrop-filter:blur(12px);
+
+}
+
+/* Empty State */
+
+.glass-card h5{
+
+    font-weight:600;
+
+}
+
+.glass-card p{
+
+    font-size:15px;
+
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:white;
+
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .display-1{
+
+        font-size:4rem;
+
+    }
+
+    .glass-card{
+
+        border-radius:18px;
+
+    }
+
+    .info-box{
+
+        margin-bottom:15px;
+
+    }
+
+}
